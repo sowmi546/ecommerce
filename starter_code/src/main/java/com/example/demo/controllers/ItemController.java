@@ -2,6 +2,7 @@ package com.example.demo.controllers;
 
 import java.util.List;
 
+import javassist.NotFoundException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +37,14 @@ public class ItemController {
 	@GetMapping("/name/{name}")
 	public ResponseEntity<List<Item>> getItemsByName(@PathVariable String name) {
 		List<Item> items = itemRepository.findByName(name);
-		return items == null || items.isEmpty() ? ResponseEntity.notFound().build()
-				: ResponseEntity.ok(items);
+		if(items==null  || items.isEmpty()){
+
+			logger.error("Exception : Items don't exist for the user with the name {}", name);
+			ResponseEntity.notFound().build();
+
+		}
+		logger.info("Success : Items retrieved for the user");
+		return ResponseEntity.ok(items);
 			
 	}
 	
