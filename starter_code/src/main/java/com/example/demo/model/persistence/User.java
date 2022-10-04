@@ -22,6 +22,18 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@JsonProperty
 	private long id;
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@JsonProperty(access= JsonProperty.Access.WRITE_ONLY)
+	@Column(nullable = false)
+	private String password;
 	
 	@Column(nullable = false, unique = true)
 	@JsonProperty
