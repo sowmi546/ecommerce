@@ -11,9 +11,10 @@ import org.springframework.http.ResponseEntity;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -47,6 +48,11 @@ public class ItemControllerTest {
         assertEquals("testItem", item.getName());
         assertEquals("testItemDescription", item.getDescription());
         assertEquals(BigDecimal.valueOf(200), item.getPrice());
+        assertNotNull(item.getId());
+        assertFalse(item.equals(null));
+        assertEquals(new Item().getClass(),item.getClass());
+        assertEquals(32, item.hashCode());
+
 
 
     }

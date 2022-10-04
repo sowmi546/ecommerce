@@ -80,6 +80,9 @@ public class OrderControllerTest {
 
         ResponseEntity<UserOrder> response = orderController.submit("testName");
         assertNotNull(response);
+        assertEquals(1, response.getBody().getItems().size());
+        assertNotNull(response.getBody().getUser());
+        assertNotNull(response.getBody().getTotal());
 
 
     }
@@ -101,6 +104,7 @@ public class OrderControllerTest {
         assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
         ResponseEntity<List<UserOrder>> response1 = orderController.getOrdersForUser("testName");
         assertNotNull(response1);
+
 
 
     }

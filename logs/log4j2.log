@@ -546,3 +546,54 @@ java.lang.NullPointerException
 2022-10-04 12:20:19.802  INFO Rajeevs-MBP.attlocal.net --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-10-04 12:20:19.806  INFO Rajeevs-MBP.attlocal.net --- [       Thread-3] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2022-10-04 12:20:19.807  INFO Rajeevs-MBP.attlocal.net --- [       Thread-3] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2022-10-04 13:08:03.590  INFO Rajeevs-MBP.attlocal.net --- [           main] c.e.d.SareetaApplication                 : Starting SareetaApplication on Rajeevs-MBP.attlocal.net with PID 98669 (/Users/rkommareddy/Documents/devOpsProject/nd035-c4-Security-and-DevOps/starter_code/target/classes started by rkommareddy in /Users/rkommareddy/Documents/devOpsProject/nd035-c4-Security-and-DevOps)
+2022-10-04 13:08:03.598  INFO Rajeevs-MBP.attlocal.net --- [           main] c.e.d.SareetaApplication                 : No active profile set, falling back to default profiles: default
+2022-10-04 13:08:04.242  INFO Rajeevs-MBP.attlocal.net --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-10-04 13:08:04.307  INFO Rajeevs-MBP.attlocal.net --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 4 repository interfaces.
+2022-10-04 13:08:04.711  INFO Rajeevs-MBP.attlocal.net --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bee9a4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-04 13:08:04.975  INFO Rajeevs-MBP.attlocal.net --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2022-10-04 13:08:04.989  INFO Rajeevs-MBP.attlocal.net --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-04 13:08:04.998  INFO Rajeevs-MBP.attlocal.net --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-10-04 13:08:04.999  INFO Rajeevs-MBP.attlocal.net --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-10-04 13:08:05.082  INFO Rajeevs-MBP.attlocal.net --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-10-04 13:08:05.083  INFO Rajeevs-MBP.attlocal.net --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1424 ms
+2022-10-04 13:08:05.239  INFO Rajeevs-MBP.attlocal.net --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-10-04 13:08:05.397  INFO Rajeevs-MBP.attlocal.net --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-10-04 13:08:05.444  INFO Rajeevs-MBP.attlocal.net --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-10-04 13:08:05.507  INFO Rajeevs-MBP.attlocal.net --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.10.Final}
+2022-10-04 13:08:05.509  INFO Rajeevs-MBP.attlocal.net --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2022-10-04 13:08:05.645  INFO Rajeevs-MBP.attlocal.net --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-10-04 13:08:05.762  INFO Rajeevs-MBP.attlocal.net --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-04 13:08:06.360  INFO Rajeevs-MBP.attlocal.net --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-04 13:08:06.850  WARN Rajeevs-MBP.attlocal.net --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-04 13:08:06.905  INFO Rajeevs-MBP.attlocal.net --- [           main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e5a2b74, org.springframework.security.web.context.SecurityContextPersistenceFilter@70f76276, org.springframework.security.web.header.HeaderWriterFilter@2d5d001f, org.springframework.web.filter.CorsFilter@658098a2, org.springframework.security.web.authentication.logout.LogoutFilter@764a3867, com.example.demo.security.JWTAuthenticationFilter@50628080, com.example.demo.security.JWTAuthenticationVerficationFilter@155318b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17e8c38c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@556843a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1add90e0, org.springframework.security.web.session.SessionManagementFilter@43094e0c, org.springframework.security.web.access.ExceptionTranslationFilter@7e28f150, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@296a71df]
+2022-10-04 13:08:06.999  INFO Rajeevs-MBP.attlocal.net --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-04 13:08:07.118  INFO Rajeevs-MBP.attlocal.net --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2022-10-04 13:08:07.146  INFO Rajeevs-MBP.attlocal.net --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-04 13:08:07.148  INFO Rajeevs-MBP.attlocal.net --- [           main] c.e.d.SareetaApplication                 : Started SareetaApplication in 3.802 seconds (JVM running for 4.543)
+2022-10-04 13:08:33.019  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-04 13:08:33.019  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-10-04 13:08:33.026  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2022-10-04 13:08:33.112  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] c.e.d.c.UserController                   : Info Message : Trying to create user with username sowmyad
+2022-10-04 13:08:33.232  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] c.e.d.c.UserController                   : User created successfully with username sowmyad
+2022-10-04 13:08:33.233  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-1] c.e.d.c.UserController                   : Success : User creation success
+2022-10-04 13:09:18.720  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-10-04 13:09:18.821  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-3] c.e.d.c.UserController                   : Success : User with username sowmyad retrieved
+2022-10-04 13:09:34.308  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-4] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:09:34.327  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-4] c.e.d.c.CartController                   :  Success : items added to cart: 1 for user sowmyad
+2022-10-04 13:09:43.432  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-5] c.e.d.c.OrderController                  : Order submitted with id: 1 for user: sowmyad
+2022-10-04 13:09:43.432  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-5] c.e.d.c.OrderController                  : Success : Order request success
+2022-10-04 13:09:50.691  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-6] c.e.d.c.OrderController                  : Success : Fetching ordered items
+2022-10-04 13:11:01.614  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-9] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:11:01.618  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-9] c.e.d.c.CartController                   :  Success : items added to cart: 2 for user sowmyad
+2022-10-04 13:11:20.476  INFO Rajeevs-MBP.attlocal.net --- [io-8080-exec-10] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:11:20.479 ERROR Rajeevs-MBP.attlocal.net --- [io-8080-exec-10] c.e.d.c.CartController                   : Exception : items not found in cart
+2022-10-04 13:13:56.367  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-3] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:13:56.368 ERROR Rajeevs-MBP.attlocal.net --- [nio-8080-exec-3] c.e.d.c.CartController                   : Exception : items not found in cart
+2022-10-04 13:14:03.229  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-4] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:14:03.233  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-4] c.e.d.c.CartController                   :  Success : items added to cart: 6 for user sowmyad
+2022-10-04 13:14:14.799  INFO Rajeevs-MBP.attlocal.net --- [nio-8080-exec-5] c.e.d.c.CartController                   : adding items to cart of user: sowmyad
+2022-10-04 13:14:14.800 ERROR Rajeevs-MBP.attlocal.net --- [nio-8080-exec-5] c.e.d.c.CartController                   : Exception : items not found in cart
+2022-10-04 13:49:02.301  WARN Rajeevs-MBP.attlocal.net --- [l-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m26s525ms).
